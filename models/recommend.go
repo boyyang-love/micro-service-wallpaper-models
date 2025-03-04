@@ -12,7 +12,7 @@ type Recommend struct {
 }
 
 func (r *Recommend) TableName() string {
-	return "like"
+	return "recommend"
 }
 
 func (r *Recommend) BeforeCreate(db *gorm.DB) (err error) {

@@ -12,7 +12,7 @@ type Category struct {
 }
 
 func (c *Category) TableName() string {
-	return "like"
+	return "category"
 }
 
 func (c *Category) BeforeCreate(db *gorm.DB) (err error) {
