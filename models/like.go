@@ -14,7 +14,7 @@ type Like struct {
 }
 
 func (l *Like) TableName() string {
-	return "upload_count"
+	return "like"
 }
 
 func (l *Like) BeforeCreate(db *gorm.DB) (err error) {
