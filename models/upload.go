@@ -20,6 +20,8 @@ type Upload struct {
 	W              int    `json:"w" form:"w"`
 	H              int    `json:"h" form:"h"`
 	Status         int    `json:"status" form:"status" gorm:"default:1"`
+	Download       int    `json:"download" form:"download" gorm:"default:0"`
+	View           int    `json:"view" form:"view" gorm:"default:0"`
 	UserId         string `json:"user_id" form:"user_id"`
 }
 
