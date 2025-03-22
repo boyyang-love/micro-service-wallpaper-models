@@ -8,8 +8,9 @@ import (
 
 type Carousel struct {
 	Base
-	Path string `json:"name" form:"name"`
-	Sort int    `json:"sort" form:"sort"`
+	Path   string `json:"name" form:"name"`
+	Sort   int    `json:"sort" form:"sort"`
+	Status int    `json:"status" form:"status"`
 }
 
 func (c *Carousel) TableName() string {
