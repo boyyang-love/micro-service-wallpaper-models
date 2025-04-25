@@ -12,6 +12,7 @@ type User struct {
 	Username string `json:"username" form:"username"`
 	Account  string `json:"account" form:"account"`
 	OpenId   string `json:"open_id" form:"open_id"`
+	AppleId  string `json:"apple_id" form:"apple_id"`
 	Password string `json:"password" form:"password"`
 	Motto    string `json:"motto" form:"motto"`
 	Address  string `json:"address" form:"address"`
