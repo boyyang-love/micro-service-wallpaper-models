@@ -25,7 +25,6 @@ type Upload struct {
 	UserId         string `json:"user_id" form:"user_id"`
 }
 
-// 定义Upload结构体的TableName方法，返回表名为"upload"
 func (u *Upload) TableName() string {
 	return "upload"
 }
