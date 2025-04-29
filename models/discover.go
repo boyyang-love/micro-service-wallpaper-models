@@ -12,6 +12,7 @@ type Discover struct {
 	Subtitle string `json:"subtitle" form:"subtitle"`
 	UserId   string `json:"user_id" form:"user_id"`
 	ImageIds string `json:"image_ids" form:"image_ids"`
+	Status   int    `json:"status" form:"status" gorm:"default:1"`
 }
 
 func (d *Discover) TableName() string {
