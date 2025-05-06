@@ -9,6 +9,8 @@ import (
 type Category struct {
 	Base
 	Name string `json:"name" form:"name"`
+	Web  bool   `json:"web"`
+	Moa  bool   `json:"moa"`
 	Sort int    `json:"sort" form:"sort"`
 }
 
