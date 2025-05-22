@@ -13,6 +13,7 @@ type Tag struct {
 	Type   string `json:"type" form:"type"`
 	Sort   int    `json:"sort" form:"sort"`
 	UserId string `json:"user_id" form:"user_id"`
+	Pid    string `json:"pid"`
 }
 
 func (t *Tag) TableName() string {

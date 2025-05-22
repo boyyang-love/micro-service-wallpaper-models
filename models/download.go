@@ -9,6 +9,7 @@ import (
 type Download struct {
 	Base
 	DownloadId string `json:"download_id" form:"download_id"`
+	Type       string `form:"type" json:"type"`
 	UserId     string `json:"user_id" form:"user_id"`
 }
 

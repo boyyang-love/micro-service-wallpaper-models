@@ -22,8 +22,8 @@ type User struct {
 	Wechat   string `json:"wechat" form:"wechat"`
 	GitHub   string `json:"git_hub" form:"git_hub"`
 	Role     string `json:"role" form:"role" gorm:"default:user"`
-	Avatar   string `json:"avatar" form:"avatar" gorm:"default:BOYYANG/default/default_avatar.jpg"`
-	Cover    string `json:"cover" form:"cover" gorm:"default:BOYYANG/default/default_cover.jpg"`
+	Avatar   string `json:"avatar" form:"avatar" gorm:"default:BOYYANG/default/avatar.jpg"`
+	Cover    string `json:"cover" form:"cover" gorm:"default:BOYYANG/default/cover.jpg"`
 }
 
 func (u *User) TableName() string {

@@ -9,6 +9,7 @@ import (
 type Like struct {
 	Base
 	UploadId string `form:"upload_id" json:"upload_id"`
+	Type     string `form:"type" json:"type"`
 	UserId   string `form:"user_id" json:"user_id"`
 	Status   bool   `form:"status" json:"status"`
 }
