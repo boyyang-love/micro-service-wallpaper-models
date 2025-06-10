@@ -11,6 +11,7 @@ type Feedback struct {
 	FeedbackId string `json:"feedback_id" form:"feedback_id"`
 	Content    string `json:"Content" form:"Content"`
 	Type       string `json:"type" form:"type"`
+	Status     int    `json:"status" form:"status"`
 	UserId     string `json:"user_id" form:"user_id"`
 }
 
