@@ -8,10 +8,11 @@ import (
 
 type Category struct {
 	Base
-	Name string `json:"name" form:"name"`
-	Web  bool   `json:"web"`
-	Moa  bool   `json:"moa"`
-	Sort int    `json:"sort" form:"sort"`
+	Name  string `json:"name" form:"name"`
+	Web   bool   `json:"web"`
+	Moa   bool   `json:"moa"`
+	Sort  int    `json:"sort" form:"sort"`
+	Cover string `json:"cover" form:"cover"`
 }
 
 func (c *Category) TableName() string {
