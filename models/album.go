@@ -11,6 +11,7 @@ type Album struct {
 	Base
 	Name   string `json:"name" form:"name"`
 	Desc   string `json:"desc" form:"desc"`
+	Cover  string `json:"cover" form:"cover"`
 	Status bool   `json:"status" form:"status"`
 }
 
