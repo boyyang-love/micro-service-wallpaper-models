@@ -8,11 +8,15 @@ import (
 
 type Discover struct {
 	Base
-	Title    string `json:"title" form:"title"`
-	Subtitle string `json:"subtitle" form:"subtitle"`
-	UserId   string `json:"user_id" form:"user_id"`
-	ImageIds string `json:"image_ids" form:"image_ids"`
-	Status   int    `json:"status" form:"status" gorm:"default:1"`
+	Title       string `json:"title" form:"title"`
+	Subtitle    string `json:"subtitle" form:"subtitle"`
+	UserId      string `json:"user_id" form:"user_id"`
+	ImageIds    string `json:"image_ids" form:"image_ids"`
+	Status      int    `json:"status" form:"status" gorm:"default:1"`
+	LikeCount   int    `json:"like_count" form:"like_count" gorm:"default:0"`
+	FavCount    int    `json:"fav_count" form:"fav_count" gorm:"default:0"`
+	CommentCount int   `json:"comment_count" form:"comment_count" gorm:"default:0"`
+	ShareCount  int    `json:"share_count" form:"share_count" gorm:"default:0"`
 }
 
 func (d *Discover) TableName() string {
